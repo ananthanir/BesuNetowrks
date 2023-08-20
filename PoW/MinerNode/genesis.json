@@ -10,7 +10,7 @@
     "difficulty": "0x10000",
     "contractSizeLimit": "24576",
     "alloc": {
-      "0x8741f2bCBF57Bf6165f0B340fEBe7fFf3D8395cd": {
+      "0x7168165E3109BC12411fD2138c2a5d8968e51Af1": {
         "balance": "90000000000000000000000"
       }
     }

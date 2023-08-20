@@ -1,7 +1,7 @@
 # Valid TOML config file
 
-data-path="/Node-3/data"
-genesis-file="/Node-3/genesis.json"
+data-path="/MinerNode/data"
+genesis-file="/MinerNode/genesis.json"
 
 network-id="01000001"
 
@@ -17,16 +17,16 @@ p2p-port=30313
 # RPC related
 rpc-http-enabled=true
 rpc-http-host="127.0.0.1"
-rpc-http-port=9547
+rpc-http-port=8502
 rpc-http-api=["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
 rpc-http-cors-origins=["all"]
 
 # ethstats
-ethstats="nodename:secret@host:1234"
+ethstats="${ETH_STATS_URL}"
 
 # Mining
 miner-enabled=true
-miner-coinbase="0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
+miner-coinbase="${COINBASE_ADDRESS}"
 
 # Bootnodes
-bootnodes=["enode://001@123:4567", "enode://002@123:4567", "enode://003@123:4567"]
+bootnodes=["${BOOT_NODE_ENODE_URL}"]

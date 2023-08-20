@@ -1,7 +1,7 @@
 # Valid TOML config file
 
-data-path="/Node-2/data"
-genesis-file="/Node-2/genesis.json"
+data-path="/FullNode/data"
+genesis-file="/FullNode/genesis.json"
 
 network-id="01000001"
 
@@ -12,17 +12,17 @@ host-allowlist=["all"]
 
 # P2P related
 p2p-host="127.0.0.1"
-p2p-port=30313
+p2p-port=30312
 
 # RPC related
 rpc-http-enabled=true
 rpc-http-host="127.0.0.1"
-rpc-http-port=9547
+rpc-http-port=8501
 rpc-http-api=["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
 rpc-http-cors-origins=["all"]
 
 # ethstats
-ethstats="nodename:secret@host:1234"
+ethstats="${ETH_STATS_URL}"
 
 # Bootnodes
-bootnodes=["enode://001@123:4567", "enode://002@123:4567", "enode://003@123:4567"]
+bootnodes=["${BOOT_NODE_ENODE_URL}"]

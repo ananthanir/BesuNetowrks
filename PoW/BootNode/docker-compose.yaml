@@ -4,6 +4,11 @@ services:
     image: hyperledger/besu:latest
     container_name: "BootNode"
     restart: unless-stopped
+    ports:
+      - 30311:30311
+      - 8500:8500
+    env_file:
+      - ../.env
     volumes:
       - .:/BootNode/:rw
     command: --config-file=/BootNode/config.toml
