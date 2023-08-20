@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node:
+    image: hyperledger/besu:latest
+    container_name: "BootNode"
+    restart: unless-stopped
+    volumes:
+      - .:/BootNode/:rw
+    command: --config-file=/BootNode/config.toml
+    user: "0"

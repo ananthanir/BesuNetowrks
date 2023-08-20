@@ -1,0 +1,17 @@
+{
+    "config": {
+      "berlinBlock": 0,
+      "ethash": {
+        "fixeddifficulty": 1000
+      },
+      "chainID": "01100001"
+    },
+    "gasLimit": "0x1000000",
+    "difficulty": "0x10000",
+    "contractSizeLimit": "24576",
+    "alloc": {
+      "0x8741f2bCBF57Bf6165f0B340fEBe7fFf3D8395cd": {
+        "balance": "90000000000000000000000"
+      }
+    }
+}
