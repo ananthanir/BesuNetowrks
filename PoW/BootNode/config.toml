@@ -22,4 +22,5 @@ rpc-http-api=["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE
 rpc-http-cors-origins=["all"]
 
 # ethstats
-ethstats="BootNode:itskba@143.110.249.165:3000"
+ethstats="${ETH_STATS_URL}"
+# ethstats="BootNode:itskba@143.110.249.165:3000"
