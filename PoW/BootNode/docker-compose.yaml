@@ -11,5 +11,5 @@ services:
       - ../.env
     volumes:
       - .:/BootNode/:rw
-    command: --config-file=/BootNode/config.toml --ethstats="${ETH_STATS_URL}"
+    command: --config-file=/BootNode/config.toml
     user: "0"
