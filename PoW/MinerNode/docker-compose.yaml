@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    image: hyperledger/besu:latest
+    container_name: "MinerNode"
+    restart: unless-stopped
+    ports:
+      - 30313:30313
+      - 8502:8502
+    env_file:
+      - ../.env
+    volumes:
+      - .:/MinerNode/:rw
+    command: --config-file=/MinerNode/config.toml
+    user: "0"

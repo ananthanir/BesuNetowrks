@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    image: hyperledger/besu:latest
+    container_name: "FullNode"
+    restart: unless-stopped
+    ports:
+      - 30312:30312
+      - 8501:8501
+    env_file:
+      - ../.env
+    volumes:
+      - .:/FullNode/:rw
+    command: --config-file=/FullNode/config.toml
+    user: "0"
