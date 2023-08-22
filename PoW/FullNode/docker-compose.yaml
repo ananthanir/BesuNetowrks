@@ -5,8 +5,9 @@ services:
     container_name: "FullNode"
     restart: unless-stopped
     ports:
-      - 30312:30312
-      - 8501:8501
+      - "30312:30312" # TCP
+      - "30312:30312/udp" #UDP
+      - "8501:8501"
     env_file:
       - ../.env
     volumes:
