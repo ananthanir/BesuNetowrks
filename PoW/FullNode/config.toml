@@ -1,5 +1,7 @@
 # Valid TOML config file
 
+nat-method="DOCKER"
+
 data-path="/FullNode/data"
 genesis-file="/FullNode/genesis.json"
 
