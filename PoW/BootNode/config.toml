@@ -1,6 +1,7 @@
 # Valid TOML config file
 
 nat-method="DOCKER"
+host-whitelist=["*"]
 
 data-path = "/BootNode/data"
 genesis-file = "/BootNode/genesis.json"
