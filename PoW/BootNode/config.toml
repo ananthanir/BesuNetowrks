@@ -1,26 +1,36 @@
 # Valid TOML config file
 
-data-path="/BootNode/data"
-genesis-file="/BootNode/genesis.json"
+data-path = "/BootNode/data"
+genesis-file = "/BootNode/genesis.json"
 
-network-id="01000001"
+network-id = "01000001"
 
-pruning-enabled=true  
+pruning-enabled = true
 
 # Connection related
-host-allowlist=["all"]
+host-allowlist = ["all"]
 
 # P2P related
-p2p-host="127.0.0.1"
-p2p-port=30311
+p2p-host = "127.0.0.1"
+p2p-port = 30311
 
 # RPC related
-rpc-http-enabled=true
-rpc-http-host="127.0.0.1"
-rpc-http-port="8500"
-rpc-http-api=["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
-rpc-http-cors-origins=["all"]
+rpc-http-enabled = true
+rpc-http-host = "127.0.0.1"
+rpc-http-port = "8500"
+rpc-http-api = [
+    "ADMIN",
+    "ETH",
+    "NET",
+    "TXPOOL",
+    "WEB3",
+    "DEBUG",
+    "TXPOOL",
+    "TRACE",
+    "PLUGINS",
+]
+rpc-http-cors-origins = ["all"]
 
 # ethstats
-ethstats="$ETH_STATS_URL"
+ethstats = "BootNode:itskba@143.110.249.165:3000"
 # ethstats="BootNode:itskba@143.110.249.165:3000"
