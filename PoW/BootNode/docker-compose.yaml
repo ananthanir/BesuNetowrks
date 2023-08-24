@@ -5,7 +5,7 @@ services:
     container_name: "BootNode"
     restart: unless-stopped
     ports:
-      - "30311:30311" # TCP
+      - "30311:30311" #TCP
       - "30311:30311/udp" #UDP
       - "8500:8500"
     env_file:
