@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ethstats-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        WS_SECRET: kbasecret
+    ports:
+      - "3000:3000"
+    user: "0"
