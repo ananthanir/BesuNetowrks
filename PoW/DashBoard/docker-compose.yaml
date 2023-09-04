@@ -8,4 +8,3 @@ services:
         WS_SECRET: itskba
     ports:
       - "3000:3000"
-    user: "0"
