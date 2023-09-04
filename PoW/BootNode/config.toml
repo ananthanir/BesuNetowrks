@@ -20,19 +20,8 @@ p2p-port = 30311
 rpc-http-enabled = true
 rpc-http-host = "127.0.0.1"
 rpc-http-port = "8500"
-rpc-http-api = [
-    "ADMIN",
-    "ETH",
-    "NET",
-    "TXPOOL",
-    "WEB3",
-    "DEBUG",
-    "TXPOOL",
-    "TRACE",
-    "PLUGINS",
-]
+rpc-http-api = ["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
 rpc-http-cors-origins = ["all"]
 
 # ethstats
-# ethstats = "BootNode:itskba@143.110.249.165:3000"
-# ethstats="BootNode:itskba@143.110.249.165:3000"
+ethstats="BootNode:itskba@165.22.214.102:3000"

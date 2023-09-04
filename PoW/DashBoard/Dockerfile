@@ -1,9 +1,6 @@
 # Use an official Node.js runtime as the base image
 FROM node:14
 
-# Set the maintainer label
-LABEL maintainer="your-email@example.com"
-
 # Declare the build argument
 ARG WS_SECRET
 

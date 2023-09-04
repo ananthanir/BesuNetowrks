@@ -1,30 +1,32 @@
 # Valid TOML config file
 
-nat-method="AUTO"
+nat-method = "AUTO"
 
-data-path="/FullNode/data"
-genesis-file="/FullNode/genesis.json"
+data-path = "/FullNode/data"
+genesis-file = "/FullNode/genesis.json"
 
-network-id="01000001"
+network-id = "01000001"
 
-pruning-enabled=true  
+pruning-enabled = true
 
 # Connection related
-host-allowlist=["all"]
+host-allowlist = ["all"]
 
 # P2P related
-p2p-host="127.0.0.1"
-p2p-port=30312
+p2p-host = "127.0.0.1"
+p2p-port = 30312
 
 # RPC related
-rpc-http-enabled=true
-rpc-http-host="127.0.0.1"
-rpc-http-port=8501
-rpc-http-api=["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
-rpc-http-cors-origins=["all"]
+rpc-http-enabled = true
+rpc-http-host = "127.0.0.1"
+rpc-http-port = 8501
+rpc-http-api = ["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
+rpc-http-cors-origins = ["all"]
 
 # ethstats
-ethstats="BootNode:itskba@143.110.249.165:3000"
+ethstats = "FullNode:itskba@165.22.214.102:3000"
 
 # Bootnodes
-bootnodes=["enode://4f1ab271f4dbd53b2cb0c8f55daa3d1ec315a7c8f130a09e54979aef41708792b18a903b6d96746fc6c4855459e69625f8a428d387692964f86b6a9d5888f128@143.110.249.165:30311"]
+bootnodes = [
+    "enode://4f1ab271f4dbd53b2cb0c8f55daa3d1ec315a7c8f130a09e54979aef41708792b18a903b6d96746fc6c4855459e69625f8a428d387692964f86b6a9d5888f128@165.22.214.102:30311",
+]
