@@ -8,9 +8,8 @@ services:
       - "30311:30311" #TCP
       - "30311:30311/udp" #UDP
       - "8500:8500"
-    env_file:
-      - ../.env
     volumes:
       - .:/BootNode/:rw
     command: --config-file=/BootNode/config.toml
     user: "0"
+

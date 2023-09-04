@@ -8,8 +8,6 @@ services:
       - "30312:30312" # TCP
       - "30312:30312/udp" #UDP
       - "8501:8501"
-    env_file:
-      - ../.env
     volumes:
       - .:/FullNode/:rw
     command: --config-file=/FullNode/config.toml

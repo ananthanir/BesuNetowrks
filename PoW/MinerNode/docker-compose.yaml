@@ -8,8 +8,6 @@ services:
       - "30313:30313" # TCP
       - "30313:30313/udp" #UDP
       - "8502:8502"
-    env_file:
-      - ../.env
     volumes:
       - .:/MinerNode/:rw
     command: --config-file=/MinerNode/config.toml
