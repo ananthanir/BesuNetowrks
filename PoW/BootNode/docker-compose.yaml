@@ -12,4 +12,3 @@ services:
       - .:/BootNode/:rw
     command: --config-file=/BootNode/config.toml
     user: "0"
-
