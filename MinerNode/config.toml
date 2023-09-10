@@ -22,7 +22,7 @@ rpc-http-api = ["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRA
 rpc-http-cors-origins = ["all"]
 
 # ethstats
-ethstats = "BootNode:itskba@165.22.209.152:3000"
+ethstats = "MinerNode:itskba@165.22.209.152:3000"
 
 # Mining
 miner-enabled = true
