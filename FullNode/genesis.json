@@ -2,7 +2,7 @@
     "config": {
       "berlinBlock": 0,
       "ethash": {
-        "fixeddifficulty": 5000
+        "fixeddifficulty": 1000
       },
       "chainID": "1100001"
     },
