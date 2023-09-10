@@ -5,9 +5,7 @@ nat-method="AUTO"
 data-path = "/BootNode/data"
 genesis-file = "/BootNode/genesis.json"
 
-network-id = "01000001"
-
-pruning-enabled = true
+network-id = "1000001"
 
 # Connection related
 host-allowlist = ["all"]
@@ -24,4 +22,4 @@ rpc-http-api = ["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRA
 rpc-http-cors-origins = ["all"]
 
 # ethstats
-ethstats="BootNode:itskba@165.22.214.102:3000"
+ethstats="BootNode:itskba@165.22.209.152:3000"

@@ -4,13 +4,13 @@
       "ethash": {
         "fixeddifficulty": 1000
       },
-      "chainID": "01100001"
+      "chainID": "1100001"
     },
     "gasLimit": "0x1000000",
     "difficulty": "0x10000",
     "contractSizeLimit": "24576",
     "alloc": {
-      "0x7168165E3109BC12411fD2138c2a5d8968e51Af1": {
+      "0x822973e8b177fbDF90347C8cE065a33b7e68a985": {
         "balance": "90000000000000000000000"
       }
     }

@@ -5,9 +5,7 @@ nat-method = "AUTO"
 data-path = "/MinerNode/data"
 genesis-file = "/MinerNode/genesis.json"
 
-network-id = "01000001"
-
-pruning-enabled = true
+network-id = "1000001"
 
 # Connection related
 host-allowlist = ["all"]
@@ -24,13 +22,13 @@ rpc-http-api = ["ADMIN", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRA
 rpc-http-cors-origins = ["all"]
 
 # ethstats
-ethstats = "BootNode:itskba@165.22.214.102:3000"
+ethstats = "BootNode:itskba@165.22.209.152:3000"
 
 # Mining
 miner-enabled = true
-miner-coinbase = "0x7168165E3109BC12411fD2138c2a5d8968e51Af1"
+miner-coinbase = "0x822973e8b177fbDF90347C8cE065a33b7e68a985"
 
 # Bootnodes
 bootnodes = [
-    "enode://4f1ab271f4dbd53b2cb0c8f55daa3d1ec315a7c8f130a09e54979aef41708792b18a903b6d96746fc6c4855459e69625f8a428d387692964f86b6a9d5888f128@165.22.214.102:30311",
+    "enode://4f1ab271f4dbd53b2cb0c8f55daa3d1ec315a7c8f130a09e54979aef41708792b18a903b6d96746fc6c4855459e69625f8a428d387692964f86b6a9d5888f128@165.22.209.152:30311",
 ]
